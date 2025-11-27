@@ -19,7 +19,7 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17.Test
                 }
                 else
                 {
-                    double value = ((x + Math.Pow(x, 2)) / x) - Math.Cos(x) * 4 * x - 6;
+                    double value = (x + Math.Pow(x, 2)) / x - Math.Cos(x) * 4 * x - 6;
                     wait[i] = Math.Round(value, 2);
                 }
             }

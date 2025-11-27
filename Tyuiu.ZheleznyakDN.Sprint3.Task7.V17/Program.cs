@@ -17,7 +17,7 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая выводит таблицу значений функции:          *");
-            Console.WriteLine("* F(x) = (x + x^2)/x - cos(x)*4x - 6 на диапазоне [-5; 5] с шагом 1       *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                                       *");
             Console.WriteLine("***************************************************************************");
@@ -34,15 +34,10 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17
 
             double[] result = ds.GetMassFunction(startValue, stopValue);
 
-            Console.WriteLine("+----------+----------+");
-            Console.WriteLine("|    X     |   F(x)   |");
-            Console.WriteLine("+----------+----------+");
-
             for (int i = 0; i < result.Length; i++)
             {
-                Console.WriteLine("|{0,5}     | {1,8:f2} |", startValue + i, result[i]);
+                Console.WriteLine(result[i]);
             }
-            Console.WriteLine("+----------+----------+");
 
             Console.ReadKey();
         }
