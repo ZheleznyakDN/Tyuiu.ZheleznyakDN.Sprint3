@@ -13,13 +13,13 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17.Test
 
             for (int x = -5, i = 0; x <= 5; x++, i++)
             {
-                if (x == 0)
+                if (x + 1.7 == 0)
                 {
                     wait[i] = 0;
                 }
                 else
                 {
-                    double value = (1 + x) - Math.Cos(x) * 4 * x - 6;
+                    double value = Math.Sin(x) / (x + 1.7) - Math.Cos(x) * 4 * x - 6;
                     wait[i] = Math.Round(value, 2);
                 }
             }

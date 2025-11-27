@@ -10,14 +10,13 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17.Lib
 
             for (int x = startValue, i = 0; x <= stopValue; x++, i++)
             {
-                if (x == 0)
+                if (x + 1.7 == 0)
                 {
                     result[i] = 0;
                 }
                 else
                 {
-
-                    double value = (1 + x) - Math.Cos(x) * 4 * x - 6;
+                    double value = Math.Sin(x) / (x + 1.7) - Math.Cos(x) * 4 * x - 6;
                     result[i] = Math.Round(value, 2);
                 }
             }
