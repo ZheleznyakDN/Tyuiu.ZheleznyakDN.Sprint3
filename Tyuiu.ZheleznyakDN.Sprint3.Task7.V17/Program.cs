@@ -17,7 +17,7 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая выводит таблицу значений функции:          *");
-            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("* F(x) = (x + x^2)/x - cos(x)*4x - 6 на диапазоне [-5; 5] с шагом 1       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ :                                                       *");
             Console.WriteLine("***************************************************************************");
@@ -25,8 +25,8 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17
             int startValue = -5;
             int stopValue = 5;
 
-            Console.WriteLine($"Начало диапазона: {startValue}");
-            Console.WriteLine($"Конец диапазона: {stopValue}");
+            Console.WriteLine("Начало диапазона: " + startValue);
+            Console.WriteLine("Конец диапазона: " + stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ :                                                             *");
@@ -38,7 +38,6 @@ namespace Tyuiu.ZheleznyakDN.Sprint3.Task7.V17
             {
                 Console.WriteLine(result[i]);
             }
-
             Console.ReadKey();
         }
     }
